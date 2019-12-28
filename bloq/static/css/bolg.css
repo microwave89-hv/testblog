@@ -1,0 +1,59 @@
+/*h1 a, h2 a {
+    color: #ff7f00;
+    font-family: "WeblySleek UI Light";
+}
+
+body {
+    padding-left: 100px;
+}*/
+
+.page-header {
+    background-color: chartreuse;
+    margin-top: 5;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #3f00ff;
+    font-size: 36pt;
+    text-decoration: none;
+    /* font-family: "WeblySleek UI Light"; */
+}
+
+.content {
+    margin-left: 155px;
+}
+
+h1 h2 h3 h4 {
+    font-family: "WeblySleek UI Light";
+}
+
+.date {
+    color: #ff0000;
+    font-size: 8pt;
+    font-family: "WeblySleek UI Light";
+    margin-left: 19px;
+}
+
+.save {
+    float: right;
+}
+
+.mypost-form textarea, .mypost-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #fedcba;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.mypost {
+    margin-bottom: 70px;
+}
+
+.mypost h2 a, .mypost h2 a:visited {
+    color: #7f0000;
+}

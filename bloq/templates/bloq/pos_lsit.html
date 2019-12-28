@@ -1,19 +1,32 @@
+{% load static %}
 <html>
     <head>
         <title>drtzzdrt</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//db.onlinewebfonts.com/c/fdabdd4713ce66e2bae7e55264aa2f75?family=WeblySleek+UI+Light" rel="stylesheet" type="text/css"/> 
+        <link rel="stylesheet" href='{% static "css/bolg.css" %}'>
     </head>
     <body>
-        <div>
-            <h1>very importnat</h1>
+        <div class="page-header">
+            <h1><a href="/">Online Easy Trade</a></h1>
             <h2>var2 = flase</h2>
             <h1>iportant:</h1>
         </div>
-        {% for psot in psots %}
-            <div>
-                <em>plubished :{{ psot.thepublishdate }}</em>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% for psot in psots %}
+                        <div class="mypost">
+                            <div class="date">
+                                <p>plubished :{{ psot.thepublishdate }}</p>
+                            </div>
+                            <h2><a href="">{{ psot.mytitle }}</a></h2>
+                            <p>{{ psot.mytext|linebreaksbr }}</p>
+                        </div>
+                    {% endfor %}
+                </div>                               
             </div>
-            <h2><a href="">{{ psot.mytitle }}</a></h2>
-            <p>{{ psot.mytext|linebreaksbr }}</p>
-        {% endfor %}
+        </div>
     </body>
 </html>
